@@ -88,7 +88,7 @@ header .row {
 
 
 .introduce {
-    background: url("../img/background/bg-1.jpg") no-repeat;
+    background: url("../img/header.jpg") no-repeat;
     background-size: cover;
     overflow: hidden;
     position: relative;
