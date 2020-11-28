@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light|Source+Sans+Pro:400,700");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-size: 38px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 80%;
+    margin: 20px auto auto;
+    color: #000;
+}
+
+h3 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    margin: 0 0 30px;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    background: #fff;
+    font-size: 14px;
+    color: #333;
+
+}
+
+
+
+
+header .row {
+    margin: auto;
+    background: #fff;
+    
+}
+
+.row .container {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.row .container .logo-header .logo img {
+    height: 70px;
+}
+
+.row .container .menu-header .menu {
+   display: flex;
+   flex-direction: row;
+
+}
+
+.row .container .menu-header .menu .item {
+    padding: 0 10px;
+    
+}
+
+.row .container .menu-header .menu .item a {
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+.row .container .menu-header .menu .item a:hover {
+    color: #00b4d9;
+}
+
+
+
+.introduce {
+    background: url("/img/backgroundheader.jpg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    padding: 100px 0 150px;
+    
+}
+
+/* .introduce::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    
+} */
+
+.introduce .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #0c0808;
+    opacity: 0.6;
+
+}
+
+.introduce .container {
+    text-align: center;
+    position: relative;
+}
+
+.introduce .container .contents {
+    
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 50px;
+    color: #fff;
+
+}
+
+.introduce .container .contents h5 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 50px;
+}
+
+.introduce .container .contents h2 {
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.introduce .container .contents p {
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.introduce .container .contact-icon ul li {
+    display: inline-block;
+    padding: 0 20px;
+    
+}
+
+.introduce .container .contact-icon ul li a {
+    background:#fff;
+    height: 35px;
+    width: 35px;
+    line-height: 36px;
+    color: #00b4d9;
+    display: block;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 16px;
+    margin: 30px 0;
+}
+
+.introduce .container .contact-icon .facebook:hover {
+    background: #00b4d9;
+    color: #fff;
+}
+
+.introduce .container .contact-icon .instagram:hover {
+    background: #00b4d9;
+    color: #fff;
+}
+
+.introduce .container .contact-icon .twitter:hover {
+    background: #00b4d9;
+    color: #fff;
+}
+
+.introduce .container .contact-icon .github:hover {
+    background: #00b4d9;
+    color: #fff;
+}
+
+.introduce .container .contact-icon .email:hover {
+    background: #00b4d9;
+    color: #fff;
+}
+
+
+.introduce .container .contact-icon .btn {
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 8px 15px;
+    background: #00b4d9;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    letter-spacing: 2px;
+}
+
+/* phần about */
+
+#about{
+    margin-bottom: 50px;
+}
+
+#about .container {
+    margin: 40px 200px 20px;
+}
+
+#about .container .title h1{
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 80%;
+    color: #000;
+    margin: 50px auto auto;
+}
+#about .container .title h1::before {
+    position: absolute;
+    margin-top: 50px;
+    content: '';
+    background: #00b4d9;
+    width: 60px;
+    height: 2px;
+}
+
+#about .container .row .photo {
+    border: 8px solid #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+#about .container .row .photo img{
+    height: 550px;
+
+}
+
+
+.container .row .content  {
+    margin: 0 90px;
+    font-weight: 400;
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 16px;
+}
+
+.container .row .content .profile {
+    margin-bottom: 20px;
+}
+
+.container .row .content .profile p {
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+.content .basic-information {
+    margin-bottom: 25px;
+}
+.content .basic-information .pro-title {
+    font-weight: 700;
+    color: #040404;
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+.content .basic-information .pro-title::after {
+    position: absolute;
+    content: ':';
+    color: black;
+    font-size: 15px;
+    left: 80px;
+}
+
+.container .row .content .btn {
+    background: #dc3545;
+    padding: 10px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.container .row .content .btn:hover {
+    background: #ec6876;
+}
+
+.container .row .content .btn i {
+    margin-right: 10px;
+}
+
+#about .container .row {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* phần Skills */
+
+#skills {
+    background: #F0F0F0;
+}
+
+#skills .container {
+    padding: 40px 200px;
+}
+
+
+#skills .container .title h1::before {
+    position: absolute;
+    content: '';
+    background: #00b4d9;
+    width: 90px;
+    height: 2px;
+    margin-top: 50px;
+}
+
+#skills .container .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+
+
+}
+
+ul li .percent {
+    float: right;
+}
+
+.row .personal-skills {
+    margin-right: 90px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.row .personal-skills:hover {
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+}
+
+.row .professional-skills {
+    margin-left: 90px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.row .professional-skills:hover {
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+}
+
+.progress {
+    height: 4px;
+    margin: 10px 0px 20px;
+    overflow: hidden;
+    background-color: #E0E0E0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+ .progress .progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 1px;
+    color: #fff;
+    text-align: center;
+    background-color: #00b4d9;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+.name-skills {
+    font-size: 15px;
+    color: #333;
+}
+
