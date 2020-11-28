@@ -42,13 +42,18 @@ body {
 
 }
 
-
+/* Phần header */
 
 
 header .row {
     margin: auto;
     background: #fff;
-    
+    position: fixed;
+    z-index: 1030;
+    top: 0;
+    left: 0;
+    right: 0;
+
 }
 
 .row .container {
@@ -228,7 +233,7 @@ header .row {
     margin-top: 50px;
     content: '';
     background: #00b4d9;
-    width: 60px;
+    width: 84px;
     height: 2px;
 }
 
@@ -318,7 +323,7 @@ header .row {
     position: absolute;
     content: '';
     background: #00b4d9;
-    width: 90px;
+    width: 81px;
     height: 2px;
     margin-top: 50px;
 }
@@ -327,8 +332,6 @@ header .row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 50px;
-
-
 }
 
 ul li .percent {
@@ -345,7 +348,7 @@ ul li .percent {
 
 .row .personal-skills:hover {
     box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s;
+    transition: all 1s;
 }
 
 .row .professional-skills {
@@ -358,7 +361,7 @@ ul li .percent {
 
 .row .professional-skills:hover {
     box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s;
+    transition: all 1s;
 }
 
 .progress {
@@ -392,3 +395,168 @@ ul li .percent {
     color: #333;
 }
 
+/* Phan Resume */
+
+#resume .container {
+    padding: 40px 200px;
+}
+
+ .container .title h1::before {
+    position: absolute;
+    content: '';
+    background: #00b4d9;
+    width: 67px;
+    height: 2px;
+    margin-top: 50px;
+}
+
+#resume .container .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+}
+
+.container .row .timeline li {
+    padding:  0 20px 20px 30px;
+    list-style: none;
+    border-left: 2px solid #f1f1f1;
+}
+
+.container .row .timeline li::before {
+    content: "";
+    border: solid 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    margin-left: -37px;
+    font-weight: 400;
+    background: #fff;
+    position: absolute;
+    margin-top: 20px;
+    border-color: #00b4d9 !important;
+}
+
+.container .row .timeline i {
+    font-size: 20px;
+    float: left;
+    background: #00b4d9;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: -15px -55px;
+    position: relative;
+}
+
+.container .row .timeline h2 {
+    font-size: 20px;
+    margin-left: 25px;
+    text-transform: uppercase;
+}
+
+
+.container .row .education {
+    padding: 20px;
+}
+
+.container .row .experience {
+    padding: 20px;
+}
+
+.education .content-text {
+    background: #f2f2f2;
+    padding: 20px;
+}
+
+.education .content-text h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 6px;
+    margin:0;
+}
+
+.education .content-text span {
+    padding: 15px 0 10px;
+    display: block;
+}
+
+.experience .content-text {
+    background: #f2f2f2;
+    padding: 20px;
+}
+
+.experience .content-text h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 6px;
+    margin: 0;
+}
+
+.experience .content-text span {
+    padding: 15px 0 10px;
+    display: block;
+}
+
+/* Phan work */
+
+#work {
+    background: #f0f0f0;
+}
+
+#work .container {
+    padding: 40px 200px;
+}
+
+#work .container h1::before {
+    position: absolute;
+    content: "";
+    background: #00b4d9;
+    width: 49.25px;
+    height: 2px;
+    margin-top: 50px;
+}
+
+#work .container .row {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 50px;
+}
+
+.container .row .item {
+    background: #fff;
+    margin: 20px 20px;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.container .row .item:hover {
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.1);
+    transition: all 1s;
+}
+
+.container .row .item .content-icon i{
+    font-size: 50px;
+    color: #00b4d9;
+    margin: 20px auto;
+}
+
+.row .item .content-text {
+    margin: 20px auto;
+}
+
+.row .item .content-text h3{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.row .item .content-text p {
+    margin: 15px 0 20px;
+    line-height: 22px;
+}
