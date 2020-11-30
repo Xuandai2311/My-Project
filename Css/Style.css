@@ -199,16 +199,20 @@ header .row {
 }
 
 
-.introduce .container .contact-icon .btn {
+.introduce .container .contact-icon .btn a {
     font-size: 14px;
     text-transform: uppercase;
     display: inline-block;
-    padding: 8px 15px;
+    padding: 12px 25px;
     background: #00b4d9;
     color: #fff;
     text-transform: uppercase;
     border-radius: 4px;
     letter-spacing: 2px;
+}
+
+.introduce .container .contact-icon .btn:hover a {
+    background: #46d6f3;
 }
 
 /* phần about */
@@ -727,10 +731,11 @@ ul li .percent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 50px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 #contact .container .row .contact-form {
-    margin: 40px 40px;
+    margin: 60px 40px;
 }
 
 
@@ -774,7 +779,7 @@ ul li .percent {
 }
 
 #contact .container .row .contact-address {
-    margin: 40px;
+    margin: 60px 40px;
 }
 
 #contact .container .row .contact-address .content-address {
