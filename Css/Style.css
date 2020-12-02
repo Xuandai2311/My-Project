@@ -25,6 +25,7 @@ h1 {
     width: 80%;
     margin: 20px auto auto;
     color: #000;
+    z-index: 1;
 }
 
 h3 {
@@ -98,7 +99,7 @@ header .row {
     overflow: hidden;
     position: relative;
     padding: 100px 0 150px;
-    
+    z-index: 4;
 }
 
 /* .introduce::before {
@@ -294,6 +295,7 @@ header .row {
     color: #fff;
     text-transform: uppercase;
     border-radius: 5px;
+    position: relative;
 }
 
 .container .row .content .btn:hover {
@@ -801,4 +803,3 @@ ul li .percent {
     padding-top: 12px;
     margin-right: 15px;
 }
-
