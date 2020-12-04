@@ -67,6 +67,7 @@ header .row {
 
 .row .container .logo-header .logo img {
     height: 70px;
+    background: #00b4d9;
 }
 
 .row .container .menu-header .menu {
@@ -83,11 +84,12 @@ header .row {
 .row .container .menu-header .menu .item a {
     color: #333;
     font-weight: 700;
+    font-size: 16px;
     text-transform: uppercase;
     padding: 0 10px;
 }
 
-.row .container .menu-header .menu .item a:hover {
+.row .container .menu-header .menu .item :hover {
     color: #00b4d9;
 }
 
@@ -98,7 +100,7 @@ header .row {
     background-size: cover;
     overflow: hidden;
     position: relative;
-    padding: 100px 0 150px;
+    padding: 125px 0 150px;
     z-index: 4;
 }
 
@@ -161,7 +163,7 @@ header .row {
     
 }
 
-.introduce .container .contact-icon ul li a {
+.introduce .container .contact-icon .Social-Network {
     background:#fff;
     height: 35px;
     width: 35px;
@@ -174,33 +176,13 @@ header .row {
     margin: 30px 0;
 }
 
-.introduce .container .contact-icon .facebook:hover {
-    background: #00b4d9;
-    color: #fff;
-}
-
-.introduce .container .contact-icon .instagram:hover {
-    background: #00b4d9;
-    color: #fff;
-}
-
-.introduce .container .contact-icon .twitter:hover {
-    background: #00b4d9;
-    color: #fff;
-}
-
-.introduce .container .contact-icon .github:hover {
-    background: #00b4d9;
-    color: #fff;
-}
-
-.introduce .container .contact-icon .email:hover {
+.introduce .container .contact-icon .Social-Network:hover {
     background: #00b4d9;
     color: #fff;
 }
 
 
-.introduce .container .contact-icon .btn a {
+.introduce .container .contact-icon .btn-header .btn-header {
     font-size: 14px;
     text-transform: uppercase;
     display: inline-block;
@@ -210,9 +192,10 @@ header .row {
     text-transform: uppercase;
     border-radius: 4px;
     letter-spacing: 2px;
+    position: relative;
 }
 
-.introduce .container .contact-icon .btn:hover a {
+.introduce .container .contact-icon .btn-header .btn-header:hover {
     background: #46d6f3;
 }
 
@@ -233,7 +216,7 @@ header .row {
     color: #000;
     margin: 50px auto auto;
 }
-#about .container .title h1::before {
+#about .container .title .title-about::before {
     position: absolute;
     margin-top: 50px;
     content: '';
@@ -243,7 +226,6 @@ header .row {
 }
 
 #about .container .row .photo {
-    border: 8px solid #fff;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -290,7 +272,7 @@ header .row {
 }
 
 .container .row .content .btn {
-    background: #dc3545;
+    background: #d62234;
     padding: 10px 30px;
     color: #fff;
     text-transform: uppercase;
@@ -344,6 +326,7 @@ ul li .percent {
     float: right;
 }
 
+
 .row .personal-skills {
     margin-right: 90px;
     padding: 20px;
@@ -386,9 +369,8 @@ ul li .percent {
     height: 100%;
     font-size: 12px;
     line-height: 1px;
-    color: #fff;
     text-align: center;
-    background-color: #00b4d9;
+    background: #00b4d9;
     -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-transition: width .6s ease;

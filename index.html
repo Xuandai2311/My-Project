@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
     <!-- stylesheet -->
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.0/css/pro.min.css">
-    <link rel="stylesheet" href="Css/css.css">
     <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="Css/css.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
                 <p class="title">Merry christmas</p>
                 <p class="content">you don't have a lover ?</p>
                 <p class="content1">let's turn on the christmas effect</p>
-                <div class="toggle" id="toggle"></div>
+                <div class="toggle" id="toggle" onclick="togglePlay()"></div>
         </div>
         <div class="event">
             <img src="img/noel/hats2.png" alt="" id="hats2">
@@ -31,7 +31,11 @@
       
     </div>
     <div id="background-christmas" class="background-christmas">
-        <img src="/img/noel/—Pngtree—creative christmas_1893077.png" alt="">
+        <img class="tree" src="/img/noel/—Pngtree—creative christmas_1893077.png" alt="">
+        <img class="santa" src="img/noel/santa.gif" alt="" id="Santa">
+        <div class="snow-buttom"></div>
+      <audio id="audio" src="sound/Happy Christmas Background Music For Videos - YouTube.mp3" preload="auto" ></audio>        
+
     </div>
     <div id="snow" class="snowflakes" aria-hidden="true">
       <div class="snowflake">❅</div>
@@ -52,6 +56,7 @@
 
     <header>
         <nav class="row">
+            <!-- background christmas -->
             <div id="noelbackground" class="b-page_noel">
                 <div class="b-page__content">
                 <i class="b-head-decor">
@@ -177,13 +182,14 @@
                 </i>
                 </div>
                 </div>
+                <!-- End backgroud chirtmas -->
             <div class="container">
                 <div class="logo-header">
                     <div id="hats1">
                         <img src="img/noel/hat.png" alt="">
                     </div>
                     <a href="index.html" class="logo">
-                        <img src="img/Logo1.png" alt="">
+                        <img src="img/Logo1.png" alt="" class="logo">
                     </a>
                 </div>
                 <div class="menu-header">
@@ -211,24 +217,24 @@
                 <div class="contact-icon">
                     <ul>
                         <li>
-                            <a href="" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="Social-Network"><i class="fab fa-facebook-f"></i></a>
                         </li>
                         <li>
-                            <a href="" class="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="" class="Social-Network"><i class="fab fa-instagram"></i></a>
                         </li>
                         <li>
-                            <a href="" class="twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="Social-Network"><i class="fab fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a href="" class="github"><i class="fab fa-github"></i></a>
+                            <a href="" class="Social-Network"><i class="fab fa-github"></i></a>
                         </li>
                         <li>
-                            <a href="" class="email"><i class="far fa-envelope"></i></a>
+                            <a href="" class="Social-Network"><i class="far fa-envelope"></i></a>
                         </li>
                     </ul>
 
-                    <div class="btn">
-                        <a href="" class="btn">get a free quote</a>
+                    <div class="btn-header">
+                        <a href="" class="btn-header">get a free quote</a>
                     </div>
                 </div>
             </div>
@@ -238,7 +244,7 @@
     <section id="about">
         <div class="container">
             <div class="title">
-                <h1>about me</h1>
+                <h1 class="title-about">about me</h1>
                 <img src="img/noel/hats3.png" alt="" id="hats3">
             </div>
             <div class="row">
@@ -277,7 +283,7 @@
                             </li>
                             <li>
                                 <span class="pro-title">Location</span>
-                                <span class="pro-detail">Đống Đa, Hà Nội, Việt Nam</span>
+                                <span class="pro-detail">Đống Đa, Hà Nội, View Nam</span>
                             </li>
                             <li>
                                 <span class="pro-title">E-mail</span>
@@ -293,7 +299,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="" id="button-christmas" class="btn"><i class="fas fa-comments-alt"></i>
+                    <a href=""  class="btn"  ><i class="fas fa-comments-alt"></i>
                         contact me
                     </a>
                     
@@ -309,7 +315,7 @@
         <div class="container">
             <div class="title">
                 <img src="img/noel/hats4.png" alt="" id="hats4">
-                <h1>my skills</h1>
+                <h1 class="title-skills">my skills</h1>
             </div>
             <div class="row">
                 <div class="personal-skills">
@@ -739,6 +745,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/js.js"></script>
+<!-- <script src="js/snowfall.jquery.min.js"></script> -->
 <script>
     $(document).ready(function(){
         $("#toggle").click(function(){
@@ -751,6 +758,7 @@
             $("#christmas-tree").toggle();
             $("#noelbackground").toggle();
             $("#background-christmas").toggle();
+            // $("#santa").toggle();
         })
     })
 </script>
@@ -759,12 +767,49 @@
     $(document).ready(function(){
         $('.toggle').click(function(){
             $('.toggle').toggleClass('active')
+            $('.logo-header .logo .logo').toggleClass('active')
+            $('.Social-Network').toggleClass('active')
+            $('.btn-header .btn-header').toggleClass('active')
+            $('.menu .item').toggleClass('active')
+            $('.title .title-about').toggleClass('active')
+            $('.title .title-skills').toggleClass('active')
+            $('.progress-bar').toggleClass('active')
+            $('.personal-skills').toggleClass('active')
+            $('.professional-skills').toggleClass('active')
+            $('.name-skills').toggleClass('active')
             $('.b-page_noel').toggleClass('active')
             $('.introduce').toggleClass('active')
             $('.btn').toggleClass('active')
+            // $('.santa').toggleClass('active')
         })
     })
 </script>
 
-   
+<script type="text/javascript">
+    $("#toggle").click(function() {
+        
+        var windowWidth = $(document).width();
+        var santa = $('.santa');
+       
+        function move_santa(){
+            santa.animate({right : windowWidth +  santa.width()},15000, function(){
+                santa.css("right","-500px");
+                setTimeout(function(){
+                    move_santa();
+                },10000);
+            });
+        }
+        
+        move_santa();
+        
+    });
+</script>
+
+<script>
+    var audio = document.getElementById("audio");
+    function togglePlay() {
+        return audio.paused ? audio.play() : audio.pause();
+    };
+</script>
+
 </html>
