@@ -1,4 +1,12 @@
 
+
+#intro {
+   display: none;
+   width: 100%;
+   height: 100%;
+   z-index: 1000000;
+   position: absolute;
+}
 /* menu */
 
 .row .container .logo-header .logo .logo.active{
@@ -101,7 +109,7 @@
 .noel-button {
    position: fixed;
    right: 20px;
-   bottom: 50px;
+   bottom: 100px;
    z-index: 5;
    background-image: url(../img/noel/banner-footer.jpg);
    border-radius: 20px;

@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.0/css/pro.min.css">
     <link rel="stylesheet" href="Css/Style.css">
     <link rel="stylesheet" href="Css/css.css">
+
 </head>
 
 <body>
 
     <!-- Su kien giang sinh -->
+    
     <div class="noel-button">
         <div class="pop-up-event">
                 <p class="title">Merry christmas</p>
@@ -31,7 +33,7 @@
       
     </div>
     <div id="background-christmas" class="background-christmas">
-        <img class="tree" src="/img/noel/—Pngtree—creative christmas_1893077.png" alt="">
+        <img class="tree" src="img/noel/—Pngtree—creative christmas_1893077.png" alt="">
         <img class="santa" src="img/noel/santa.gif" alt="" id="Santa">
         <div class="snow-buttom"></div>
       <audio id="audio" src="sound/Happy Christmas Background Music For Videos - YouTube.mp3" preload="auto" ></audio>        
@@ -54,8 +56,8 @@
     </div>
 
 
-    <header>
-        <nav class="row">
+    <header id="home">
+        <nav class="row" id="row-menu">
             <!-- background christmas -->
             <div id="noelbackground" class="b-page_noel">
                 <div class="b-page__content">
@@ -192,15 +194,36 @@
                         <img src="img/Logo1.png" alt="" class="logo">
                     </a>
                 </div>
+                <!-- menu header Pc -->
                 <div class="menu-header">
                     <ul class="menu">
-                        <li class="item"><a href="">Home</a></li>
-                        <li class="item"><a href="">about</a></li>
-                        <li class="item"><a href="">skills</a></li>
-                        <li class="item"><a href="">resume</a></li>
-                        <li class="item"><a href="">work</a></li>
-                        <li class="item"><a href="">blog</a></li>
-                        <li class="item"><a href="">contact</a></li>
+                        <li class="item"><a href="#home">Home</a></li>
+                        <li class="item"><a href="#about">about</a></li>
+                        <li class="item"><a href="#skills">skills</a></li>
+                        <li class="item"><a href="#resume">resume</a></li>
+                        <li class="item"><a href="#work">work</a></li>
+                        <li class="item"><a href="#blog">blog</a></li>
+                        <li class="item"><a href="#contact">contact</a></li>
+                    </ul>
+                </div>
+                <!-- menu header mobile -->
+                <label for="menu-mobile-input" class="menu-bars-btn">
+                    <i class="far fa-bars"></i>
+                </label>
+                <input type="checkbox" hidden  class="menu-input" id="menu-mobile-input" >
+                <label for="menu-mobile-input" class="bars-overlay"></label>
+                <div class="menu-mobile">
+                    <label for="menu-mobile-input" class="menu-mobile-close">
+                        <i class="far fa-times"></i>
+                    </label>
+                    <ul class="menu-item-mobile">
+                        <li class="item-mobile"><a href="">about</a></li>
+                        <li class="item-mobile"><a href="">Home</a></li>
+                        <li class="item-mobile"><a href="">skills</a></li>
+                        <li class="item-mobile"><a href="">resume</a></li>
+                        <li class="item-mobile"><a href="">work</a></li>
+                        <li class="item-mobile"><a href="">blog</a></li>
+                        <li class="item-mobile"><a href="">contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -430,7 +453,7 @@
     <section id="resume">
         <div class="container">
             <div class="title">
-                <h1>Resume</h1>
+                <h1 class="title-resume">Resume</h1>
             </div>
             <div class="row">
                 <div class="education">
@@ -740,12 +763,41 @@
         </div>
     </section>
 
+    <a href="#" class="to-top">
+        <i class="far fa-chevron-up"></i>
+    </a>
     
 </body>
 
+<script src="js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="js/js.js"></script>
+<scrip src="js/js.js"></scrip>
+
+<!-- <scrip>
+    const toTop = document.querySelector('.to-top');
+
+    window.addEventListener("scroll"), () => {
+        if (window.pageXOffset > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+    }
+</scrip> -->
+
 <!-- <script src="js/snowfall.jquery.min.js"></script> -->
+<!-- 
+<script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("row-menu").style.top = "0";
+        } else {
+            document.getElementById("row-menu").style.top = "-20px";
+        }
+    }
+</script> -->
+
 <script>
     $(document).ready(function(){
         $("#toggle").click(function(){
@@ -773,6 +825,7 @@
             $('.menu .item').toggleClass('active')
             $('.title .title-about').toggleClass('active')
             $('.title .title-skills').toggleClass('active')
+            $('.title .title-resume').toggleClass('active')
             $('.progress-bar').toggleClass('active')
             $('.personal-skills').toggleClass('active')
             $('.professional-skills').toggleClass('active')

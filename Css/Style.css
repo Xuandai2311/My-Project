@@ -785,3 +785,114 @@ ul li .percent {
     padding-top: 12px;
     margin-right: 15px;
 }
+
+.to-top {
+    background: #a0b0b3;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #00b4d9;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* mobile bar */
+header .row .container .menu-bars-btn {
+    width: 28px;
+    height: 28px;
+    color: #333;
+    display: none;
+}
+
+header .row .container .menu-bars-btn .far {
+    font-size: 30px;
+}
+
+header .row .container .bars-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+header .row .container .menu-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform linear 0.2s, opacity linear 0.2s;
+}
+
+header .row .container .menu-mobile .menu-item-mobile {
+    margin-top: 30px;
+}
+
+header .row .container .menu-mobile .menu-item-mobile .item-mobile {
+    text-transform: uppercase;
+    color: #333;
+    text-align: center;
+    margin: 20px auto;
+    font-weight: 700;
+}
+
+header .row .container .menu-mobile .menu-mobile-close {
+    margin: 20px 20px;
+    font-size: 25px;
+    position: absolute;
+}
+header .row .container .menu-input:checked ~ .bars-overlay {
+    display: block;
+}
+
+header .row .container .menu-input:checked ~ .menu-mobile {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+@media (max-width: 1030px) {
+    header .row .container .menu-bars-btn {
+        display: block;
+    }
+    header .row .container .menu-header {
+        display: none;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
