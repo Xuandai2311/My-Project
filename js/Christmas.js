@@ -74,7 +74,7 @@ $(document).ready(function () {
         $("#christmas-tree").toggle();
         $("#noelbackground").toggle();
         $("#background-christmas").toggle();
-        // $("#santa").toggle();
+        $("#audio").toggle();
     })
   });
   
@@ -127,6 +127,10 @@ $(document).ready(function () {
   });
   // santa sound (event christmas)
   var audio = document.getElementById("audio");
-  function togglePlay() {
-  return audio.paused ? audio.play() : audio.pause();
-  };
+  
+function togglePlay() {
+    
+    return audio.paused ? audio.play() : audio.pause();
+    }
+
+ 
