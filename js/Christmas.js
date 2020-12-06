@@ -102,6 +102,8 @@ $(document).ready(function () {
         $('.btn').toggleClass('active')
         $('.btn-send').toggleClass('active')
         $('.content-address').toggleClass('active')
+        $('.avatar').toggleClass('active')
+        $('.item-mobile').toggleClass('active')
         $('.to-top .far').toggleClass('active')
         $('.timeline').toggleClass('active')
     });

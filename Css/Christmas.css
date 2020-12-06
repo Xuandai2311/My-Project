@@ -356,6 +356,16 @@
    z-index: 2;
    display: none;
 }
+header .row .container .menu-mobile .avatar.active img {
+   border: 4px solid #B80000;
+}
+header .row .container .menu-mobile .avatar.active h1 {
+   color: #00962B;
+}
+header .row .container .menu-mobile .menu-item-mobile .item-mobile.active a:hover {
+   color: #00962B;
+}
+
 
 
 .to-top .far.active {

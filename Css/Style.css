@@ -859,7 +859,7 @@ html {
 header .row .container .menu-bars-btn {
     width: 28px;
     height: 28px;
-    color: #333;
+    color: #fff;
     display: none;
 }
 
@@ -890,6 +890,26 @@ header .row .container .menu-mobile {
     opacity: 0;
     transition: transform linear 0.2s, opacity linear 0.2s;
 }
+header .row .container .menu-mobile .avatar {
+    text-align: center;
+}
+header .row .container .menu-mobile .avatar img {
+    width: 150px;
+    margin-top: 50px;
+    border: 4px solid #00b4d9;
+    border-radius: 50%;
+    
+}
+header .row .container .menu-mobile .avatar h1 {
+    margin: 10px auto auto;
+    font-weight: 700;
+    font-family: 'Black Ops One', cursive;
+    color: #00b4d9;
+}
+header .row .container .menu-mobile .avatar span {
+    font-size: 18px;
+    font-weight: 700;
+}
 
 header .row .container .menu-mobile .menu-item-mobile {
     margin-top: 30px;
@@ -897,13 +917,18 @@ header .row .container .menu-mobile .menu-item-mobile {
 
 header .row .container .menu-mobile .menu-item-mobile .item-mobile {
     text-transform: uppercase;
-    color: #333;
     text-align: center;
-    margin: 20px auto;
+    margin: 30px auto;
     font-weight: 700;
 }
 
-header .row .container .menu-mobile .menu-mobile-close {
+header .row .container .menu-mobile .menu-item-mobile .item-mobile a {
+    color: #000;
+}
+header .row .container .menu-mobile .menu-item-mobile .item-mobile a:hover {
+    color: #00b4d9;
+}
+header .row .container .menu-mobile .menu-mobile-close .far {
     margin: 20px 20px;
     font-size: 25px;
     position: absolute;
@@ -915,6 +940,7 @@ header .row .container .menu-input:checked ~ .bars-overlay {
 header .row .container .menu-input:checked ~ .menu-mobile {
     transform: translateX(0);
     opacity: 1;
+    z-index: 1000;
 }
 
 
