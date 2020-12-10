@@ -82,6 +82,7 @@ $(document).ready(function () {
     $('.toggle').click(function () {
         $('.toggle').toggleClass('active')
         $('.logo-header .logo').toggleClass('active')
+        $('.menu-bars-btn .far').toggleClass('active')
         $('.Social-Network').toggleClass('active')
         $('.btn-header .btn-header').toggleClass('active')
         $('.menu .item').toggleClass('active')

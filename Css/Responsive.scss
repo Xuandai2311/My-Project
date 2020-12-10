@@ -199,11 +199,23 @@
         }
       }
     }
+    .introduce.active {
+      .container {
+        .contents {
+          padding-top: 100px;
+        }
+      }
+    }
   }
   #about {
     .container {
       max-width: 992px;
       margin: 40px 32px 20px;
+      .title {
+        img {
+          margin: -66px 0 0 60px;
+        }
+      }
       .row {
         margin: auto;
         .photo {
@@ -235,6 +247,11 @@
       max-width: 992px;
       padding: 40px 0;
       margin: 40px 32px 20px;
+      .title {
+        img {
+          margin: -7px 0 0 40px;
+        }
+      }
       .row {
         .personal-skills {
           margin-right: 30px;
@@ -256,6 +273,12 @@
       max-width: 992px;
       padding: 40px 0;
       margin: 40px 32px 20px;
+      .title {
+        #hats-resume {
+          transform: rotate(354deg);
+          margin: -15px 0 0 50px;
+        }
+      }
       .row {
         .education {
           .content-text {
@@ -295,6 +318,11 @@
       max-width: 992px;
       padding: 40px 0;
       margin: 40px 32px 20px;
+      .title {
+        #hats-work {
+          margin: -6px 0 0 40px;
+        }
+      }
       .row-work {
         grid-template-columns: repeat(2,2fr);
         .item {
@@ -326,6 +354,12 @@
       max-width: 992px;
       padding: 40px 0;
       margin: 40px 32px 20px;
+      .title {
+        #hats-blog {
+          transform: rotate(365deg);
+          margin: -18px 0 0 53px;
+        }
+      }
     }
   }
   #contact {
@@ -356,6 +390,8 @@
 //   }
 // }
 
+
+// mobile
 @media (max-width: 767px) {
   header {
     .row {
@@ -408,6 +444,9 @@
         .title-about::before {
           margin-top: 35px;
         }
+        img {
+          margin: -60px 0 0 20px;
+        }
       }
       .row {
         display: grid;
@@ -444,6 +483,9 @@
         .title-skills::before {
           margin-top: 35px;
         }
+        img {
+          margin: -11px 0 0 3px;
+        }
       }
       .row {
         grid-template-columns: repeat(1,1fr);
@@ -474,6 +516,10 @@
         }
         .title-resume::before {
           margin-top: 35px;
+        }
+        #hats-resume {
+          transform: rotate(361deg);
+          margin: -20px 0 0 16px;
         }
       }
       .row {
@@ -512,6 +558,9 @@
         .title-work::before {
           margin-top: 35px;
         }
+        #hats-work {
+          margin: -11px 0 0 4px;
+        }
       }
       .row-work {
         grid-template-columns: repeat(1,1fr);
@@ -539,6 +588,9 @@
         }
         .title-blog::before {
           margin-top: 35px;
+        }
+        #hats-blog {
+          margin: -23px 0 0 18px;
         }
       }
       .row {
