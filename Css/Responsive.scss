@@ -1,0 +1,557 @@
+/* only small desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  header {
+    .row {
+      .container {
+        max-width: 850px;
+        .menu-header {
+          .menu {
+            .item {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+    .introduce {
+      background-size: cover;
+      .container {
+        margin: 0;
+        .contents {
+          h5 {
+            font-size: 45px;
+          }
+          h2 {
+            font-size: 60px;
+          }
+          p {
+            font-size: 25px;
+          }
+        }
+        .contact-icon {
+          ul {
+            li {
+              padding: 0 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #about {
+    .container {
+      max-width: 992px;
+      margin: 40px 32px 20px;
+      .row {
+        margin: auto;
+        .photo {
+          max-width: 50%;
+          margin-left: 30px;
+          img {
+            height: 450px;
+          }
+        }
+        .content {
+          margin: 0 auto;
+          max-width: 50%;
+          .profile {
+            font-size: 14px;
+          }
+          .basic-information {
+            font-size: 14px;
+          }
+          .btn {
+            font-size: 14px;
+            padding: 10px 25px;
+          }
+        }
+      }
+    }
+  }
+  #skills {
+    .container {
+      max-width: 992px;
+      padding: 40px 0;
+      margin: 40px 32px 20px;
+      .row {
+        .personal-skills {
+          margin-right: 35px;
+          h3 {
+            font-size: 30px;
+          }
+        }
+        .professional-skills {
+          margin-left: 35px;
+          h3 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  #resume {
+    .container {
+      max-width: 992px;
+      padding: 40px 0;
+      margin: 40px 32px 20px;
+      .row {
+        .education {
+          .content-text {
+            h3 {
+              font-size: 16px;
+            }
+            span {
+              font-size: 12px;
+            }
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+        .experience {
+          .content-text {
+            h3 {
+              font-size: 16px;
+            }
+            span {
+              font-size: 12px;
+            }
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #work {
+    .container {
+      max-width: 992px;
+      padding: 40px 0;
+      margin: 40px 32px 20px;
+      .row-work {
+        .item {
+          margin: 20px 15px;
+          .content-text {
+            h3 {
+              font-size: 12px;
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #blog {
+    .container {
+      max-width: 992px;
+      padding: 40px 0;
+      margin: 40px 32px 20px;
+    }
+  }
+  #contact {
+    .container {
+      max-width: 992px;
+      margin: 40px 32px 20px;
+    }
+  }
+}
+
+/* tablets */
+@media (max-width: 991px) {
+  header {
+    .row {
+      .container {
+        max-width: 650px;
+        .menu-header {
+          .menu {
+            .item {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+    .introduce {
+      background-size: cover;
+      .container {
+        margin: 0;
+        .contents {
+          padding-top: 40px;
+          h5 {
+            font-size: 40px;
+          }
+          h2 {
+            font-size: 55px;
+          }
+          p {
+            font-size: 25px;
+          }
+        }
+        .contact-icon {
+          ul {
+            li {
+              padding: 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #about {
+    .container {
+      max-width: 992px;
+      margin: 40px 32px 20px;
+      .row {
+        margin: auto;
+        .photo {
+          max-width: 50%;
+          margin-bottom: 45px;
+          img {
+            height: 450px;
+          }
+        }
+        .content {
+          margin: 0 auto;
+          max-width: 50%;
+          .profile {
+            font-size: 14px;
+          }
+          .basic-information {
+            font-size: 14px;
+          }
+          .btn {
+            font-size: 14px;
+            padding: 10px 25px;
+          }
+        }
+      }
+    }
+  }
+  #skills {
+    .container {
+      max-width: 992px;
+      padding: 40px 0;
+      margin: 40px 32px 20px;
+      .row {
+        .personal-skills {
+          margin-right: 30px;
+          h3 {
+            font-size: 30px;
+          }
+        }
+        .professional-skills {
+          margin-left: 30px;
+          h3 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  #resume {
+    .container {
+      max-width: 992px;
+      padding: 40px 0;
+      margin: 40px 32px 20px;
+      .row {
+        .education {
+          .content-text {
+            padding: 25px;
+            h3 {
+              font-size: 16px;
+              line-height: 18px;
+            }
+            span {
+              font-size: 12px;
+              padding: 15px 0 13px;
+            }
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+        .experience {
+          .content-text {
+            h3 {
+              font-size: 16px;
+              line-height: 18px;
+            }
+            span {
+              font-size: 12px;
+            }
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #work {
+    .container {
+      max-width: 992px;
+      padding: 40px 0;
+      margin: 40px 32px 20px;
+      .row-work {
+        grid-template-columns: repeat(2,2fr);
+        .item {
+          margin: 10px 15px;
+          padding: 10px;
+          .content-icon {
+            margin-top: 20px;
+            i {
+              margin: 0;
+            }
+          }
+          .content-text {
+            margin-top: 20px;
+            h3 {
+              font-size: 16px;
+            }
+            p {
+              font-size: 14px;
+              margin: 15px 25px;
+              line-height: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #blog {
+    .container {
+      max-width: 992px;
+      padding: 40px 0;
+      margin: 40px 32px 20px;
+    }
+  }
+  #contact {
+    .container {
+      max-width: 992px;
+      padding: 40px 0;
+      margin: 40px 32px 20px;
+    }
+  }
+}
+
+// @media (min-width: 768px) and (max-width: 991px) {
+//   header {
+//     .row {
+//       .container {
+//         max-width: 700px;
+//       }
+//     }
+//     .introduce {
+//       max-width: 1024px;
+//       .overlay {
+//         width: 100%;
+//       }
+//       .container {
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
+
+@media (max-width: 767px) {
+  header {
+    .row {
+      padding-top: 20px;
+      .container {
+        max-width: 380px;
+        width: 100%;
+      }
+    }
+    .row.sticky {
+      padding: 5px 20px;
+    }
+    .introduce {
+      padding: 120px 0;
+      .container {
+        .contents {
+          h5 {
+            font-size: 23px;
+          }
+          h2 {
+            font-size: 30px;
+            padding: 10px 0;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+        .contact-icon {
+          ul {
+            li {
+              padding: 0 4px;
+            }
+          }
+          .btn-header {
+            .btn-header {
+              padding: 10px 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #about {
+    padding: 0;
+    .container {
+      .title {
+        .title-about {
+          font-size: 30px;
+        }
+        .title-about::before {
+          margin-top: 35px;
+        }
+      }
+      .row {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        .photo {
+          max-width: 100%;
+          margin: 40px 0;
+          img {
+            height: 525px;
+          }
+        }
+        .content {
+          max-width: 100%;
+          .profile {
+            h3 {
+              font-size: 25px;
+            }
+          }
+          .basic-information {
+            .pro-title {
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #skills {
+    .container {
+      .title {
+        .title-skills{
+          font-size: 30px;
+        }
+        .title-skills::before {
+          margin-top: 35px;
+        }
+      }
+      .row {
+        grid-template-columns: repeat(1,1fr);
+        .personal-skills {
+          margin: 0;
+          width: 100%;
+          h3 {
+            font-size: 25px;
+          }
+        }
+        .professional-skills {
+          margin: 0;
+          width: 100%;
+          margin-top: 15px;
+          h3 {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+  #resume {
+    .container {
+      padding: 0;
+      .title {
+        .title-resume {
+          font-size: 30px
+        }
+        .title-resume::before {
+          margin-top: 35px;
+        }
+      }
+      .row {
+        grid-template-columns: repeat(1,1fr); 
+        .education {
+          padding: 0;
+          .timeline {
+            li {
+              padding: 0 0 20px 30px;
+              .timeline-title {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+        .experience {
+          padding: 0;
+          .timeline {
+            li {
+              padding: 0 0 20px 30px;
+              .time-line {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+       }
+    }
+  }
+  #work {
+    .container {
+      .title {
+        .title-work {
+          font-size: 30px;
+        }
+        .title-work::before {
+          margin-top: 35px;
+        }
+      }
+      .row-work {
+        grid-template-columns: repeat(1,1fr);
+        .item {
+          padding: 0;
+          margin: 10px 0;
+          .content-item {
+            padding: 15px 0;
+            .content-text {
+              p {
+                margin: 15px 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #blog {
+    .container {
+      padding: 0;
+      .title {
+        .title-blog {
+          font-size: 30px;
+        }
+        .title-blog::before {
+          margin-top: 35px;
+        }
+      }
+      .row {
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 20px;
+      }
+    }
+  }
+  #contact {
+    .container {
+      .row {
+        grid-template-columns: repeat(1,1fr);
+      }
+    }
+  }
+}

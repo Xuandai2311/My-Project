@@ -48,7 +48,7 @@ body {
 
 
 header .row {
-    margin: auto;
+    margin: 0 auto;
     position: fixed;
     z-index: 1030;
     top: 0;
@@ -56,7 +56,7 @@ header .row {
     right: 0;
     width: 100%;
     transition: 0.6s;
-    padding: 30px 100px;
+    padding-top: 40px;
 }
 
 header .row.sticky {
@@ -64,25 +64,21 @@ header .row.sticky {
     background: #fff;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
+header .row.sticky .container .logo-header a {
+    font-size: 40px;
+}
 
 .row .container {
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
-.row .container .logo-header .logo img {
-    height: 70px;
-    background: #00b4d9;
-   
-}
-
 .row .container .logo-header a {
     color: #fff;
-    font-weight: 700;
-    font-size: 3em;
+    font-weight: 500;
+    font-size: 50px;
     position: relative;
     text-transform: uppercase;
     text-decoration: none;
@@ -91,6 +87,7 @@ header .row.sticky {
     font-family: 'Black Ops One', cursive;
 
 }
+
 
 header .row.sticky .logo-header a {
     color: #00b4d9;
@@ -115,6 +112,7 @@ header .row.sticky .logo-header a {
     padding: 0 10px;
     transition: 0.6s;
 }
+
 
 header .row.sticky .container .menu-header .menu .item a{
     color: #000
@@ -863,6 +861,10 @@ header .row .container .menu-bars-btn {
     display: none;
 }
 
+header .row.sticky .container .menu-bars-btn {
+    color: #00b4d9;
+}
+
 header .row .container .menu-bars-btn .far {
     font-size: 30px;
 }
@@ -944,7 +946,7 @@ header .row .container .menu-input:checked ~ .menu-mobile {
 }
 
 
-@media (max-width: 1030px) {
+@media (max-width: 992px) {
     header .row .container .menu-bars-btn {
         display: block;
     }
